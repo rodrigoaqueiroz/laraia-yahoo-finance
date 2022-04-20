@@ -33,5 +33,5 @@ def get_total_employees(soup):
 
 def get_key_executives(soup):
   names = soup.find_all('tr', class_ = "Bdc($seperatorColor)")
-  key_executive_names = [name.find('td').text for name in names[1:]]
+  key_executive_names = [f"{name.find('td').text}\n" for name in names[1:]]
   return key_executive_names
