@@ -2,7 +2,6 @@ from bs4 import BeautifulSoup
 import requests
 import yfinance as yf
 import pandas as pd
-import matplotlib.pyplot as plt
 import scraper_utils_functions
 import streamlit as st
 from datetime import date
@@ -53,7 +52,3 @@ def render_graph(arg, array):
   my_chart = st.line_chart(fetch_default(array)[arg][array[0]], height=400, width=400)
   for company in array[1:]:
     my_chart.add_rows(fetch_default(array)[arg][company])
-
-# print(fetch_company_data_history('Volume','NFLX'))
-print(type(fetch_company_data_history('Volume','NFLX')))
-# print(type(fetch_default(DEFAULT_COMPANIES))['Volume']['AMZN'])

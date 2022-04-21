@@ -9,6 +9,7 @@
 - [Como desenvolver](#como-desenvolver)
   - [etapas](#O-desafio-consiste-das-seguintesetapas)
 - [Prints](#prints)
+- [Deploy](#deploy)
 - [Contatos](#contatos)
 ---
 
@@ -110,6 +111,11 @@ O arquivo `requirements.txt` contém todas as dependências que foram utilizadas
 
 ---
 
+# Deploy
+
+O deploy foi realizado no Heroku, para acessar clique <a href='https://laraia-challenge-raqueiroz.herokuapp.com/'> AQUI </a>
+
+---
 # Contatos
 
 <div style="display: flex; align-items: center; justify-content: space-between;">
