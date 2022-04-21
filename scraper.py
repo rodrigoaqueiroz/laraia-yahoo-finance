@@ -43,12 +43,17 @@ def fetch_info(symbol):
     return None
 
 
-def fetch_company_data_history(symbol):
-  data = yf.download(symbol, period='1mo')['Adj Close']
-  return data
+def fetch_company_data_history(arg, symbol):
+  data = yf.download(symbol, start='2021-01-01', end=date.today())[arg]
+  df = pd.DataFrame(data)
+  return df
 
 
 def render_graph(arg, array):
-  my_chart = st.line_chart(fetch_default(array)[arg][array[0]])
+  my_chart = st.line_chart(fetch_default(array)[arg][array[0]], height=400, width=400)
   for company in array[1:]:
     my_chart.add_rows(fetch_default(array)[arg][company])
+
+# print(fetch_company_data_history('Volume','NFLX'))
+print(type(fetch_company_data_history('Volume','NFLX')))
+# print(type(fetch_default(DEFAULT_COMPANIES))['Volume']['AMZN'])
