@@ -8,5 +8,6 @@ jsonschema
 matplotlib
 matplotlib-inline
 pandas
+streamlit
 requests==2.26
 yfinance==0.1.70
