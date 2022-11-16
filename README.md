@@ -5,9 +5,8 @@
 # Sumário
 
 - [Habilidades](#habilidades)
-- [Descrição](#descricao)
+- [Descricao](#descricao)
 - [Como desenvolver](#como-desenvolver)
-  - [etapas](#O-desafio-consiste-das-seguintesetapas)
 - [Prints](#prints)
 - [Deploy](#deploy)
 - [Contatos](#contatos)
@@ -22,7 +21,7 @@
 
 ---
 
-## Descrição
+# Descrição
 
 Este desafio consiste na obtenção de dados financeiros na internet para posterior processamento e análise. O intuito deste desafio é testar sua capacidade de compreender uma série de descrições de funcionalidades de um sistema e codificar adequadamente a solução.
 
